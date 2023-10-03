@@ -1,13 +1,27 @@
 
-var flavors = prompt["vanilla,vanilla, vanilla, strawberry, coffee,coffee"];
 
-var flavorCounts = {};
-flavors.split(",").forEach(function (flavor) {
-  if (flavorCounts.hasOwnProperty(flavor)) {
-    flavorCounts[flavor]++;
-  } else {
-    flavorCounts[flavor] = 1;
+const userInputString = prompt("Enter froyo flavors separated by commas:");
+constflavors= ("vanilla,vanilla, vanilla, strawberry, coffee,coffee:");
+
+
+
+
+
+
+const observedFlavors = {};
+
+function trackFlavors(flavors) {
+  for (const flavor of flavors) {
+    if (observedFlavors[flavor]) {
+      observedFlavors[flavor]++;
+    } else {
+      observedFlavors[flavor] = 1;
+    }
   }
-});
+}
 
-var table =document.createElement("table")
+constflavors = prompt("Enter froyo flavors separated by commas:");
+const flavorsArray = userInput.split(",");
+trackFlavors(flavorsArray);
+
+console.log(observedFlavors);
