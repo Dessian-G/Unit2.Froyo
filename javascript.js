@@ -34,7 +34,10 @@ function trackFlavors(flavors) {
   }
 }
 
+
+
 constflavors = prompt("Enter froyo flavors separated by commas:");
+const userInput = "vanilla,vanilla,vanilla,strawberry,coffee,coffee";
 const flavorsArray = userInput.split(",");
 trackFlavors(flavorsArray);
 
